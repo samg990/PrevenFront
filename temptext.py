@@ -11,9 +11,8 @@ def lasttemp():
         global last_line
         last_line = line
         
-        print(last_line)
+        
         return last_line
     
 last_t = lasttemp()
         
-print(last_t)
