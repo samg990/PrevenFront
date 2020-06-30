@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-from temptext import *
+from temptesting import *
 
 # multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
 
@@ -13,9 +13,6 @@ cap = cv2.VideoCapture(0)
 
 red = 0, 0, 255
 green = 0, 255, 0
-
-print(last_t)
-
 
 
 while 1:
@@ -50,6 +47,6 @@ while 1:
     k = cv2.waitKey(30) & 0xff
     if k == 27:
         break
-
+print(last_t)
 cap.release()
 cv2.destroyAllWindows()
